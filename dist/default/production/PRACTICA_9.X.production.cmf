@@ -13,12 +13,12 @@
 %PSECTS
 $dist/default/production\PRACTICA_9.X.production.o
 cinit CODE 0 7FD 7FD 3 2
-text1 CODE 0 7BC 7BC 9 2
-text2 CODE 0 7C5 7C5 A 2
+text1 CODE 0 7BA 7BA 9 2
+text2 CODE 0 7C3 7C3 A 2
 text3 CODE 0 7D9 7D9 24 2
-text4 CODE 0 7B3 7B3 9 2
-maintext CODE 0 7CF 7CF A 2
-$C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
+text4 CODE 0 7B1 7B1 9 2
+maintext CODE 0 7CD 7CD C 2
+$C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 0 8007 8007 5 2
@@ -64,9 +64,9 @@ BANK6 320-36F 1
 BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
-CONST 4-7B2 2
+CONST 4-7B0 2
 CONST 800-3FFF 2
-ENTRY 4-7B2 2
+ENTRY 4-7B0 2
 ENTRY 800-3FFF 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
@@ -124,7 +124,7 @@ SFR61 1E80-1EEF 1
 SFR62 1F00-1F6F 1
 SFR63 1F80-1FEF 1
 STACK 2000-27EF 1
-CODE 4-7B2 2
+CODE 4-7B0 2
 CODE 800-3FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -155,9 +155,9 @@ BANK25 CA0-CBF 1
 BIGRAM 2000-27EF 1
 COMMON 70-7D 1
 EEDATA F000-F0FF 2
-STRCODE 4-7B2 2
+STRCODE 4-7B0 2
 STRCODE 800-3FFF 2
-STRING 4-7B2 2
+STRING 4-7B0 2
 STRING 800-3FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -173,18 +173,18 @@ STRING 800-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\PRACTICA_9.X.production.o
-7FD cinit CODE >3862:C:\Users\MAKARE~1\AppData\Local\Temp\sadc.
-7FD cinit CODE >3865:C:\Users\MAKARE~1\AppData\Local\Temp\sadc.
-7FD cinit CODE >3871:C:\Users\MAKARE~1\AppData\Local\Temp\sadc.
-7FD cinit CODE >3873:C:\Users\MAKARE~1\AppData\Local\Temp\sadc.
-7FE cinit CODE >3874:C:\Users\MAKARE~1\AppData\Local\Temp\sadc.
-7B3 text4 CODE >57:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7B3 text4 CODE >60:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7B6 text4 CODE >62:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7B7 text4 CODE >64:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7B8 text4 CODE >66:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7BA text4 CODE >68:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7BB text4 CODE >69:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7FD cinit CODE >3862:C:\Users\MAKARE~1\AppData\Local\Temp\s21s.
+7FD cinit CODE >3865:C:\Users\MAKARE~1\AppData\Local\Temp\s21s.
+7FD cinit CODE >3871:C:\Users\MAKARE~1\AppData\Local\Temp\s21s.
+7FD cinit CODE >3873:C:\Users\MAKARE~1\AppData\Local\Temp\s21s.
+7FE cinit CODE >3874:C:\Users\MAKARE~1\AppData\Local\Temp\s21s.
+7B1 text4 CODE >57:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7B1 text4 CODE >60:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7B4 text4 CODE >62:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7B5 text4 CODE >64:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7B6 text4 CODE >66:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7B8 text4 CODE >68:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7B9 text4 CODE >69:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
 7D9 text3 CODE >55:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/pin_manager.c
 7D9 text3 CODE >60:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/pin_manager.c
 7DB text3 CODE >61:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/pin_manager.c
@@ -208,25 +208,27 @@ $dist/default/production\PRACTICA_9.X.production.o
 7F8 text3 CODE >103:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/pin_manager.c
 7FA text3 CODE >104:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/pin_manager.c
 7FC text3 CODE >112:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/pin_manager.c
-7C5 text2 CODE >71:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7C5 text2 CODE >74:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7C7 text2 CODE >76:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7C8 text2 CODE >78:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7C9 text2 CODE >80:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7CA text2 CODE >82:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7CB text2 CODE >84:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7CC text2 CODE >86:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7CD text2 CODE >88:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7CE text2 CODE >89:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7BC text1 CODE >50:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7BC text1 CODE >52:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7BF text1 CODE >53:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7C2 text1 CODE >54:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7C4 text1 CODE >55:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
-7CF maintext CODE >49:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\main.c
-7CF maintext CODE >52:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\main.c
-7D2 maintext CODE >72:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\main.c
-7D7 maintext CODE >73:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\main.c
+7C3 text2 CODE >71:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7C3 text2 CODE >74:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7C5 text2 CODE >76:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7C6 text2 CODE >78:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7C7 text2 CODE >80:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7C8 text2 CODE >82:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7C9 text2 CODE >84:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7CA text2 CODE >86:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7CB text2 CODE >88:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7CC text2 CODE >89:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7BA text1 CODE >50:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7BA text1 CODE >52:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7BD text1 CODE >53:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7C0 text1 CODE >54:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7C2 text1 CODE >55:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\mcc_generated_files/mcc.c
+7CD maintext CODE >49:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\main.c
+7CD maintext CODE >52:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\main.c
+7D0 maintext CODE >72:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\main.c
+7D3 maintext CODE >73:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\main.c
+7D4 maintext CODE >72:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\main.c
+7D7 maintext CODE >74:C:\Users\Makarenko-PC\MPLABXProjects\PRACTICA_9.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -246,7 +248,7 @@ __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
-_PMD_Initialize F8A 0 CODE 0 text2 dist/default/production\PRACTICA_9.X.production.o
+_PMD_Initialize F86 0 CODE 0 text2 dist/default/production\PRACTICA_9.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 __CFG_WDTCCS$SC 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 _LATA 18 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
@@ -263,22 +265,22 @@ _PMD7 79D 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 _WPUA 1F39 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 _WPUB 1F44 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 _WPUC 1F4F 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
-_main F9E 0 CODE 0 maintext dist/default/production\PRACTICA_9.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
+_main F9A 0 CODE 0 maintext dist/default/production\PRACTICA_9.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
-start 4 0 CODE 0 init C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
+start 4 0 CODE 0 init C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
 __size_of_main 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
 wtemp0 7E 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
-__end_of_PMD_Initialize F9E 0 CODE 0 text2 dist/default/production\PRACTICA_9.X.production.o
+__end_of_PMD_Initialize F9A 0 CODE 0 text2 dist/default/production\PRACTICA_9.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELA 1F38 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 _ANSELB 1F43 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
@@ -288,8 +290,8 @@ __CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 _INLVLA 1F3C 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 _INLVLB 1F47 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 _INLVLC 1F52 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
-___stackhi 27EF 0 ABS 0 - C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
-___stacklo 2000 0 ABS 0 - C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
+___stackhi 27EF 0 ABS 0 - C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
+___stacklo 2000 0 ABS 0 - C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
 __CFG_SAFEN$OFF 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 _PIN_MANAGER_Initialize FB2 0 CODE 0 text3 dist/default/production\PRACTICA_9.X.production.o
 start_initialization FFA 0 CODE 0 cinit dist/default/production\PRACTICA_9.X.production.o
@@ -298,8 +300,8 @@ _ODCONB 1F45 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 _ODCONC 1F50 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 _OSCFRQ 893 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 __CFG_WDTCPS$WDTCPS_31 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
-__end_of_SYSTEM_Initialize F8A 0 CODE 0 text1 dist/default/production\PRACTICA_9.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
+__end_of_SYSTEM_Initialize F86 0 CODE 0 text1 dist/default/production\PRACTICA_9.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -529,10 +531,10 @@ __S1 0 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __CFG_BBEN$OFF 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
-_SYSTEM_Initialize F78 0 CODE 0 text1 dist/default/production\PRACTICA_9.X.production.o
+_SYSTEM_Initialize F74 0 CODE 0 text1 dist/default/production\PRACTICA_9.X.production.o
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 __size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 __end_of_PIN_MANAGER_Initialize FFA 0 CODE 0 text3 dist/default/production\PRACTICA_9.X.production.o
@@ -590,7 +592,7 @@ __Lbank60 0 0 BANK60 1 bank60 -
 __Lbank61 0 0 BANK61 1 bank61 -
 __Lbank62 0 0 BANK62 1 bank62 -
 __Lbank63 0 0 BANK63 1 bank63 -
-__pmaintext F9E 0 CODE 0 maintext dist/default/production\PRACTICA_9.X.production.o
+__pmaintext F9A 0 CODE 0 maintext dist/default/production\PRACTICA_9.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
 __CFG_BORV$LO 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 __CFG_RSTOSC$HFINT1 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
@@ -618,10 +620,10 @@ __Hintentry 4 0 CODE 0 intentry -
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 4 0 CODE 0 reset_vec -
-__ptext1 F78 0 CODE 0 text1 dist/default/production\PRACTICA_9.X.production.o
-__ptext2 F8A 0 CODE 0 text2 dist/default/production\PRACTICA_9.X.production.o
+__ptext1 F74 0 CODE 0 text1 dist/default/production\PRACTICA_9.X.production.o
+__ptext2 F86 0 CODE 0 text2 dist/default/production\PRACTICA_9.X.production.o
 __ptext3 FB2 0 CODE 0 text3 dist/default/production\PRACTICA_9.X.production.o
-__ptext4 F66 0 CODE 0 text4 dist/default/production\PRACTICA_9.X.production.o
+__ptext4 F62 0 CODE 0 text4 dist/default/production\PRACTICA_9.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
@@ -647,11 +649,11 @@ __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 __CFG_ZCDDIS$OFF 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
-__end_of_OSCILLATOR_Initialize F78 0 CODE 0 text4 dist/default/production\PRACTICA_9.X.production.o
+__end_of_OSCILLATOR_Initialize F74 0 CODE 0 text4 dist/default/production\PRACTICA_9.X.production.o
 __CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
 __initialization FFA 0 CODE 0 cinit dist/default/production\PRACTICA_9.X.production.o
 __CFG_PWRTS$OFF 0 0 ABS 0 - dist/default/production\PRACTICA_9.X.production.o
-_OSCILLATOR_Initialize F66 0 CODE 0 text4 dist/default/production\PRACTICA_9.X.production.o
+_OSCILLATOR_Initialize F62 0 CODE 0 text4 dist/default/production\PRACTICA_9.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -678,10 +680,10 @@ _OSCILLATOR_Initialize F66 0 CODE 0 text4 dist/default/production\PRACTICA_9.X.p
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FD FFA 3 2
-text1 0 7BC F78 9 2
-text2 0 7C5 F8A A 2
+text1 0 7BA F74 9 2
+text2 0 7C3 F86 A 2
 text3 0 7D9 FB2 24 2
-text4 0 7B3 F66 9 2
-maintext 0 7CF F9E A 2
+text4 0 7B1 F62 9 2
+maintext 0 7CD F9A C 2
 reset_vec 0 0 0 4 2
 config 0 8007 1000E 5 2
