@@ -1,15 +1,52 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[p mainexit ]
-"68 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 68: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"34 main.c
-[; ;main.c: 34:         if(switch0_GetValue() == 1){led0_SetHigh();}
-[v _switch0_GetValue `(i ~T0 @X0 0 e? ]
-[v _led0_SetHigh `(i ~T0 @X0 0 e? ]
-"35
-[; ;main.c: 35:         else{led0_SetLow();}
-[v _led0_SetLow `(i ~T0 @X0 0 e? ]
+"94 mcc_generated_files/mcc.h
+[; ;mcc_generated_files/mcc.h: 94: void PMD_Initialize(void);
+[v _PMD_Initialize `(v ~T0 @X0 0 ef ]
+"78 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 78: void PIN_MANAGER_Initialize (void);
+[v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
+"81 mcc_generated_files/mcc.h
+[; ;mcc_generated_files/mcc.h: 81: void OSCILLATOR_Initialize(void);
+[v _OSCILLATOR_Initialize `(v ~T0 @X0 0 ef ]
+"21023 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 21023: extern volatile unsigned char OSCCON1 __attribute__((address(0x88D)));
+[v _OSCCON1 `Vuc ~T0 @X0 0 e@2189 ]
+"21163
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 21163: extern volatile unsigned char OSCCON3 __attribute__((address(0x88F)));
+[v _OSCCON3 `Vuc ~T0 @X0 0 e@2191 ]
+"21260
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 21260: extern volatile unsigned char OSCEN __attribute__((address(0x891)));
+[v _OSCEN `Vuc ~T0 @X0 0 e@2193 ]
+"21369
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 21369: extern volatile unsigned char OSCFRQ __attribute__((address(0x893)));
+[v _OSCFRQ `Vuc ~T0 @X0 0 e@2195 ]
+"21311
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 21311: extern volatile unsigned char OSCTUNE __attribute__((address(0x892)));
+[v _OSCTUNE `Vuc ~T0 @X0 0 e@2194 ]
+"19672
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 19672: extern volatile unsigned char PMD0 __attribute__((address(0x796)));
+[v _PMD0 `Vuc ~T0 @X0 0 e@1942 ]
+"19717
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 19717: extern volatile unsigned char PMD1 __attribute__((address(0x797)));
+[v _PMD1 `Vuc ~T0 @X0 0 e@1943 ]
+"19773
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 19773: extern volatile unsigned char PMD2 __attribute__((address(0x798)));
+[v _PMD2 `Vuc ~T0 @X0 0 e@1944 ]
+"19794
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 19794: extern volatile unsigned char PMD3 __attribute__((address(0x799)));
+[v _PMD3 `Vuc ~T0 @X0 0 e@1945 ]
+"19839
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 19839: extern volatile unsigned char PMD4 __attribute__((address(0x79A)));
+[v _PMD4 `Vuc ~T0 @X0 0 e@1946 ]
+"19890
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 19890: extern volatile unsigned char PMD5 __attribute__((address(0x79B)));
+[v _PMD5 `Vuc ~T0 @X0 0 e@1947 ]
+"19917
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 19917: extern volatile unsigned char PMD6 __attribute__((address(0x79C)));
+[v _PMD6 `Vuc ~T0 @X0 0 e@1948 ]
+"19950
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 19950: extern volatile unsigned char PMD7 __attribute__((address(0x79D)));
+[v _PMD7 `Vuc ~T0 @X0 0 e@1949 ]
 "110 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 110: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1372,45 +1409,87 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32039
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 32039: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
-[v $root$_main `(v ~T0 @X0 0 e ]
-"12 main.c
-[; ;main.c: 12: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
-"13
-[; ;main.c: 13: {
+"50 mcc_generated_files/mcc.c
+[; ;mcc_generated_files/mcc.c: 50: void SYSTEM_Initialize(void)
+[v _SYSTEM_Initialize `(v ~T0 @X0 1 ef ]
+"51
+[; ;mcc_generated_files/mcc.c: 51: {
 {
-[e :U _main ]
+[e :U _SYSTEM_Initialize ]
 [f ]
-"15
-[; ;main.c: 15:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"32
-[; ;main.c: 32:     while (1)
-[e :U 1515 ]
-"33
-[; ;main.c: 33:     {
-{
-"34
-[; ;main.c: 34:         if(switch0_GetValue() == 1){led0_SetHigh();}
-[e $ ! == ( _switch0_GetValue ..  -> 1 `i 1517  ]
-{
-[e ( _led0_SetHigh ..  ]
-}
-[e $U 1518  ]
-"35
-[; ;main.c: 35:         else{led0_SetLow();}
-[e :U 1517 ]
-{
-[e ( _led0_SetLow ..  ]
-}
-[e :U 1518 ]
-"36
-[; ;main.c: 36:     }
-}
-[e :U 1514 ]
-[e $U 1515  ]
-[e :U 1516 ]
-"38
-[; ;main.c: 38: }
+"52
+[; ;mcc_generated_files/mcc.c: 52:     PMD_Initialize();
+[e ( _PMD_Initialize ..  ]
+"53
+[; ;mcc_generated_files/mcc.c: 53:     PIN_MANAGER_Initialize();
+[e ( _PIN_MANAGER_Initialize ..  ]
+"54
+[; ;mcc_generated_files/mcc.c: 54:     OSCILLATOR_Initialize();
+[e ( _OSCILLATOR_Initialize ..  ]
+"55
+[; ;mcc_generated_files/mcc.c: 55: }
 [e :UE 1513 ]
+}
+"57
+[; ;mcc_generated_files/mcc.c: 57: void OSCILLATOR_Initialize(void)
+[v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
+"58
+[; ;mcc_generated_files/mcc.c: 58: {
+{
+[e :U _OSCILLATOR_Initialize ]
+[f ]
+"60
+[; ;mcc_generated_files/mcc.c: 60:     OSCCON1 = 0x62;
+[e = _OSCCON1 -> -> 98 `i `uc ]
+"62
+[; ;mcc_generated_files/mcc.c: 62:     OSCCON3 = 0x00;
+[e = _OSCCON3 -> -> 0 `i `uc ]
+"64
+[; ;mcc_generated_files/mcc.c: 64:     OSCEN = 0x00;
+[e = _OSCEN -> -> 0 `i `uc ]
+"66
+[; ;mcc_generated_files/mcc.c: 66:     OSCFRQ = 0x02;
+[e = _OSCFRQ -> -> 2 `i `uc ]
+"68
+[; ;mcc_generated_files/mcc.c: 68:     OSCTUNE = 0x00;
+[e = _OSCTUNE -> -> 0 `i `uc ]
+"69
+[; ;mcc_generated_files/mcc.c: 69: }
+[e :UE 1514 ]
+}
+"71
+[; ;mcc_generated_files/mcc.c: 71: void PMD_Initialize(void)
+[v _PMD_Initialize `(v ~T0 @X0 1 ef ]
+"72
+[; ;mcc_generated_files/mcc.c: 72: {
+{
+[e :U _PMD_Initialize ]
+[f ]
+"74
+[; ;mcc_generated_files/mcc.c: 74:     PMD0 = 0x00;
+[e = _PMD0 -> -> 0 `i `uc ]
+"76
+[; ;mcc_generated_files/mcc.c: 76:     PMD1 = 0x00;
+[e = _PMD1 -> -> 0 `i `uc ]
+"78
+[; ;mcc_generated_files/mcc.c: 78:     PMD2 = 0x00;
+[e = _PMD2 -> -> 0 `i `uc ]
+"80
+[; ;mcc_generated_files/mcc.c: 80:     PMD3 = 0x00;
+[e = _PMD3 -> -> 0 `i `uc ]
+"82
+[; ;mcc_generated_files/mcc.c: 82:     PMD4 = 0x00;
+[e = _PMD4 -> -> 0 `i `uc ]
+"84
+[; ;mcc_generated_files/mcc.c: 84:     PMD5 = 0x00;
+[e = _PMD5 -> -> 0 `i `uc ]
+"86
+[; ;mcc_generated_files/mcc.c: 86:     PMD6 = 0x00;
+[e = _PMD6 -> -> 0 `i `uc ]
+"88
+[; ;mcc_generated_files/mcc.c: 88:     PMD7 = 0x00;
+[e = _PMD7 -> -> 0 `i `uc ]
+"89
+[; ;mcc_generated_files/mcc.c: 89: }
+[e :UE 1515 ]
 }

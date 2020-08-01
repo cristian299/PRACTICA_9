@@ -1,15 +1,67 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[p mainexit ]
-"68 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 68: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"34 main.c
-[; ;main.c: 34:         if(switch0_GetValue() == 1){led0_SetHigh();}
-[v _switch0_GetValue `(i ~T0 @X0 0 e? ]
-[v _led0_SetHigh `(i ~T0 @X0 0 e? ]
-"35
-[; ;main.c: 35:         else{led0_SetLow();}
-[v _led0_SetLow `(i ~T0 @X0 0 e? ]
+"748 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 748: extern volatile unsigned char LATA __attribute__((address(0x018)));
+[v _LATA `Vuc ~T0 @X0 0 e@24 ]
+"798
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 798: extern volatile unsigned char LATB __attribute__((address(0x019)));
+[v _LATB `Vuc ~T0 @X0 0 e@25 ]
+"837
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 837: extern volatile unsigned char LATC __attribute__((address(0x01A)));
+[v _LATC `Vuc ~T0 @X0 0 e@26 ]
+"597
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 597: extern volatile unsigned char TRISA __attribute__((address(0x012)));
+[v _TRISA `Vuc ~T0 @X0 0 e@18 ]
+"647
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 647: extern volatile unsigned char TRISB __attribute__((address(0x013)));
+[v _TRISB `Vuc ~T0 @X0 0 e@19 ]
+"686
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 686: extern volatile unsigned char TRISC __attribute__((address(0x014)));
+[v _TRISC `Vuc ~T0 @X0 0 e@20 ]
+"31260
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 31260: extern volatile unsigned char ANSELC __attribute__((address(0x1F4E)));
+[v _ANSELC `Vuc ~T0 @X0 0 e@8014 ]
+"30948
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 30948: extern volatile unsigned char ANSELB __attribute__((address(0x1F43)));
+[v _ANSELB `Vuc ~T0 @X0 0 e@8003 ]
+"30563
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 30563: extern volatile unsigned char ANSELA __attribute__((address(0x1F38)));
+[v _ANSELA `Vuc ~T0 @X0 0 e@7992 ]
+"30987
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 30987: extern volatile unsigned char WPUB __attribute__((address(0x1F44)));
+[v _WPUB `Vuc ~T0 @X0 0 e@8004 ]
+"30608
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 30608: extern volatile unsigned char WPUA __attribute__((address(0x1F39)));
+[v _WPUA `Vuc ~T0 @X0 0 e@7993 ]
+"31322
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 31322: extern volatile unsigned char WPUC __attribute__((address(0x1F4F)));
+[v _WPUC `Vuc ~T0 @X0 0 e@8015 ]
+"30658
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 30658: extern volatile unsigned char ODCONA __attribute__((address(0x1F3A)));
+[v _ODCONA `Vuc ~T0 @X0 0 e@7994 ]
+"31026
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 31026: extern volatile unsigned char ODCONB __attribute__((address(0x1F45)));
+[v _ODCONB `Vuc ~T0 @X0 0 e@8005 ]
+"31384
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 31384: extern volatile unsigned char ODCONC __attribute__((address(0x1F50)));
+[v _ODCONC `Vuc ~T0 @X0 0 e@8016 ]
+"30703
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 30703: extern volatile unsigned char SLRCONA __attribute__((address(0x1F3B)));
+[v _SLRCONA `Vuc ~T0 @X0 0 e@7995 ]
+"31065
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 31065: extern volatile unsigned char SLRCONB __attribute__((address(0x1F46)));
+[v _SLRCONB `Vuc ~T0 @X0 0 e@8006 ]
+"31446
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 31446: extern volatile unsigned char SLRCONC __attribute__((address(0x1F51)));
+[v _SLRCONC `Vuc ~T0 @X0 0 e@8017 ]
+"30748
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 30748: extern volatile unsigned char INLVLA __attribute__((address(0x1F3C)));
+[v _INLVLA `Vuc ~T0 @X0 0 e@7996 ]
+"31104
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 31104: extern volatile unsigned char INLVLB __attribute__((address(0x1F47)));
+[v _INLVLB `Vuc ~T0 @X0 0 e@8007 ]
+"31508
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 31508: extern volatile unsigned char INLVLC __attribute__((address(0x1F52)));
+[v _INLVLC `Vuc ~T0 @X0 0 e@8018 ]
 "110 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 110: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1372,45 +1424,90 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32039
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 32039: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
-[v $root$_main `(v ~T0 @X0 0 e ]
-"12 main.c
-[; ;main.c: 12: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
-"13
-[; ;main.c: 13: {
+"55 mcc_generated_files/pin_manager.c
+[; ;mcc_generated_files/pin_manager.c: 55: void PIN_MANAGER_Initialize(void)
+[v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
+"56
+[; ;mcc_generated_files/pin_manager.c: 56: {
 {
-[e :U _main ]
+[e :U _PIN_MANAGER_Initialize ]
 [f ]
-"15
-[; ;main.c: 15:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"32
-[; ;main.c: 32:     while (1)
-[e :U 1515 ]
-"33
-[; ;main.c: 33:     {
-{
-"34
-[; ;main.c: 34:         if(switch0_GetValue() == 1){led0_SetHigh();}
-[e $ ! == ( _switch0_GetValue ..  -> 1 `i 1517  ]
-{
-[e ( _led0_SetHigh ..  ]
-}
-[e $U 1518  ]
-"35
-[; ;main.c: 35:         else{led0_SetLow();}
-[e :U 1517 ]
-{
-[e ( _led0_SetLow ..  ]
-}
-[e :U 1518 ]
-"36
-[; ;main.c: 36:     }
-}
-[e :U 1514 ]
-[e $U 1515  ]
-[e :U 1516 ]
-"38
-[; ;main.c: 38: }
+"60
+[; ;mcc_generated_files/pin_manager.c: 60:     LATA = 0x00;
+[e = _LATA -> -> 0 `i `uc ]
+"61
+[; ;mcc_generated_files/pin_manager.c: 61:     LATB = 0x00;
+[e = _LATB -> -> 0 `i `uc ]
+"62
+[; ;mcc_generated_files/pin_manager.c: 62:     LATC = 0x00;
+[e = _LATC -> -> 0 `i `uc ]
+"67
+[; ;mcc_generated_files/pin_manager.c: 67:     TRISA = 0x3F;
+[e = _TRISA -> -> 63 `i `uc ]
+"68
+[; ;mcc_generated_files/pin_manager.c: 68:     TRISB = 0xF0;
+[e = _TRISB -> -> 240 `i `uc ]
+"69
+[; ;mcc_generated_files/pin_manager.c: 69:     TRISC = 0xFF;
+[e = _TRISC -> -> 255 `i `uc ]
+"74
+[; ;mcc_generated_files/pin_manager.c: 74:     ANSELC = 0xFF;
+[e = _ANSELC -> -> 255 `i `uc ]
+"75
+[; ;mcc_generated_files/pin_manager.c: 75:     ANSELB = 0xF0;
+[e = _ANSELB -> -> 240 `i `uc ]
+"76
+[; ;mcc_generated_files/pin_manager.c: 76:     ANSELA = 0x37;
+[e = _ANSELA -> -> 55 `i `uc ]
+"81
+[; ;mcc_generated_files/pin_manager.c: 81:     WPUB = 0x00;
+[e = _WPUB -> -> 0 `i `uc ]
+"82
+[; ;mcc_generated_files/pin_manager.c: 82:     WPUA = 0x00;
+[e = _WPUA -> -> 0 `i `uc ]
+"83
+[; ;mcc_generated_files/pin_manager.c: 83:     WPUC = 0x00;
+[e = _WPUC -> -> 0 `i `uc ]
+"88
+[; ;mcc_generated_files/pin_manager.c: 88:     ODCONA = 0x00;
+[e = _ODCONA -> -> 0 `i `uc ]
+"89
+[; ;mcc_generated_files/pin_manager.c: 89:     ODCONB = 0x00;
+[e = _ODCONB -> -> 0 `i `uc ]
+"90
+[; ;mcc_generated_files/pin_manager.c: 90:     ODCONC = 0x00;
+[e = _ODCONC -> -> 0 `i `uc ]
+"95
+[; ;mcc_generated_files/pin_manager.c: 95:     SLRCONA = 0x37;
+[e = _SLRCONA -> -> 55 `i `uc ]
+"96
+[; ;mcc_generated_files/pin_manager.c: 96:     SLRCONB = 0xF0;
+[e = _SLRCONB -> -> 240 `i `uc ]
+"97
+[; ;mcc_generated_files/pin_manager.c: 97:     SLRCONC = 0xFF;
+[e = _SLRCONC -> -> 255 `i `uc ]
+"102
+[; ;mcc_generated_files/pin_manager.c: 102:     INLVLA = 0x3F;
+[e = _INLVLA -> -> 63 `i `uc ]
+"103
+[; ;mcc_generated_files/pin_manager.c: 103:     INLVLB = 0xF0;
+[e = _INLVLB -> -> 240 `i `uc ]
+"104
+[; ;mcc_generated_files/pin_manager.c: 104:     INLVLC = 0xFF;
+[e = _INLVLC -> -> 255 `i `uc ]
+"112
+[; ;mcc_generated_files/pin_manager.c: 112: }
 [e :UE 1513 ]
+}
+"114
+[; ;mcc_generated_files/pin_manager.c: 114: void PIN_MANAGER_IOC(void)
+[v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
+"115
+[; ;mcc_generated_files/pin_manager.c: 115: {
+{
+[e :U _PIN_MANAGER_IOC ]
+[f ]
+"116
+[; ;mcc_generated_files/pin_manager.c: 116: }
+[e :UE 1514 ]
 }
