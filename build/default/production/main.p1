@@ -3,13 +3,28 @@ Version 4.0 HI-TECH Software Intermediate Code
 "68 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 68: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"34 main.c
-[; ;main.c: 34:         if(switch0_GetValue() == 1){led0_SetHigh();}
-[v _switch0_GetValue `(i ~T0 @X0 0 e? ]
-[v _led0_SetHigh `(i ~T0 @X0 0 e? ]
-"35
-[; ;main.c: 35:         else{led0_SetLow();}
-[v _led0_SetLow `(i ~T0 @X0 0 e? ]
+"541 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 541:     struct {
+[s S37 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S37 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
+"540
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 540: typedef union {
+[u S36 `S37 1 ]
+[n S36 . . ]
+"552
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 552: extern volatile PORTCbits_t PORTCbits __attribute__((address(0x00E)));
+[v _PORTCbits `VS36 ~T0 @X0 0 e@14 ]
+"754
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 754:     struct {
+[s S45 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S45 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 ]
+"753
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 753: typedef union {
+[u S44 `S45 1 ]
+[n S44 . . ]
+"763
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 763: extern volatile LATAbits_t LATAbits __attribute__((address(0x018)));
+[v _LATAbits `VS44 ~T0 @X0 0 e@24 ]
 "110 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 110: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1373,44 +1388,52 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18446.h: 32039: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"12 main.c
-[; ;main.c: 12: void main(void)
+"49 main.c
+[; ;main.c: 49: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"13
-[; ;main.c: 13: {
+"50
+[; ;main.c: 50: {
 {
 [e :U _main ]
 [f ]
-"15
-[; ;main.c: 15:     SYSTEM_Initialize();
+"52
+[; ;main.c: 52:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"32
-[; ;main.c: 32:     while (1)
+"69
+[; ;main.c: 69:     while (1)
 [e :U 1515 ]
-"33
-[; ;main.c: 33:     {
+"70
+[; ;main.c: 70:     {
 {
-"34
-[; ;main.c: 34:         if(switch0_GetValue() == 1){led0_SetHigh();}
-[e $ ! == ( _switch0_GetValue ..  -> 1 `i 1517  ]
+"72
+[; ;main.c: 72:         if(PORTCbits.RC2 == 1){do { LATAbits.LATA2 = 1; } while(0);}
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1517  ]
 {
-[e ( _led0_SetHigh ..  ]
+[e :U 1520 ]
+{
+[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 }
-[e $U 1518  ]
-"35
-[; ;main.c: 35:         else{led0_SetLow();}
+[e :U 1519 ]
+}
+[e $U 1521  ]
+"73
+[; ;main.c: 73:         else{do { LATAbits.LATA2 = 0; } while(0);}
 [e :U 1517 ]
 {
-[e ( _led0_SetLow ..  ]
+[e :U 1524 ]
+{
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 }
-[e :U 1518 ]
-"36
-[; ;main.c: 36:     }
+[e :U 1523 ]
+}
+[e :U 1521 ]
+"74
+[; ;main.c: 74:     }
 }
 [e :U 1514 ]
 [e $U 1515  ]
 [e :U 1516 ]
-"38
-[; ;main.c: 38: }
+"75
+[; ;main.c: 75: }
 [e :UE 1513 ]
 }
