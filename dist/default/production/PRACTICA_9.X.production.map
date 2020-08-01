@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.05\pic\dat\en_msgs.txt \
   -cs -h+dist/default/production\PRACTICA_9.X.production.sym \
   --cmf=dist/default/production\PRACTICA_9.X.production.cmf -z -Q16F18446 \
-  -oC:\Users\MAKARE~1\AppData\Local\Temp\sadc.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\MAKARE~1\AppData\Local\Temp\s21s.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/PRACTICA_9.X.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=02000h-027EFh -pstack=STACK -ACODE=00h-07FFhx8 \
   -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 -ACONST=00h-0FFhx64 \
@@ -46,7 +46,7 @@ Linker command line:
   -pfunctab=ENTRY -ACONFIG=08007h-0800Bh -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/0F000h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o \
+  -DENTRY=2 -k C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o \
   dist/default/production\PRACTICA_9.X.production.o 
 
 Object code version is 3.11
@@ -56,17 +56,17 @@ Machine type is 16F18446
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\MAKARE~1\AppData\Local\Temp\sadc.o
+C:\Users\MAKARE~1\AppData\Local\Temp\s21s.o
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        5    1000E       0
 dist/default/production\PRACTICA_9.X.production.o
                 cinit                               7FD      7FD        3      FFA       0
-                text4                               7B3      7B3        9      F66       0
+                text4                               7B1      7B1        9      F62       0
                 text3                               7D9      7D9       24      FB2       0
-                text2                               7C5      7C5        A      F8A       0
-                text1                               7BC      7BC        9      F78       0
-                maintext                            7CF      7CF        A      F9E       0
+                text2                               7C3      7C3        A      F86       0
+                text1                               7BA      7BA        9      F74       0
+                maintext                            7CD      7CD        C      F9A       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -75,11 +75,11 @@ TOTAL           Name                               Link     Load   Length     Sp
                 end_init                              2        2        2         0
                 cinit                               7FD      7FD        3         0
                 reset_vec                             0        0        2         0
-                text4                               7B3      7B3        9         0
+                text4                               7B1      7B1        9         0
                 text3                               7D9      7D9       24         0
-                text2                               7C5      7C5        A         0
-                text1                               7BC      7BC        9         0
-                maintext                            7CF      7CF        A         0
+                text2                               7C3      7C3        A         0
+                text1                               7BA      7BA        9         0
+                maintext                            7CD      7CD        C         0
 
         CLASS   STRCODE        
 
@@ -366,10 +366,10 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000004  000004         0       0  CODE        2
-                text4                          0007B3  000009  0007BC       F66       0  CODE        2
-                text1                          0007BC  000009  0007C5       F78       0  CODE        2
-                text2                          0007C5  00000A  0007CF       F8A       0  CODE        2
-                maintext                       0007CF  00000A  0007D9       F9E       0  CODE        2
+                text4                          0007B1  000009  0007BA       F62       0  CODE        2
+                text1                          0007BA  000009  0007C3       F74       0  CODE        2
+                text2                          0007C3  00000A  0007CD       F86       0  CODE        2
+                maintext                       0007CD  00000C  0007D9       F9A       0  CODE        2
                 text3                          0007D9  000024  0007FD       FB2       0  CODE        2
                 cinit                          0007FD  000003  000800       FFA       0  CODE        2
                 config                         008007  000005  00800C     1000E       0  CONFIG      2
@@ -405,13 +405,13 @@ UNUSED ADDRESS RANGES
         BANK8            00420-0046F              50           1
         BANK9            004A0-004EF              50           1
         BIGRAM           02000-027EF             7F0           1
-        CODE             00004-007B2             7AF           2
+        CODE             00004-007B0             7AD           2
                          00800-03FFF             800
         COMMON           00070-0007D               E           1
-        CONST            00004-007B2             100           2
+        CONST            00004-007B0             100           2
                          00800-03FFF             100
         EEDATA           0F000-0F0FF             100           2
-        ENTRY            00004-007B2             100           2
+        ENTRY            00004-007B0             100           2
                          00800-03FFF             100
         IDLOC            08000-08003               4           2
         RAM              00020-0006F              50           1
@@ -505,9 +505,9 @@ UNUSED ADDRESS RANGES
         SFR8             00400-0041F              20           1
         SFR9             00480-0049F              20           1
         STACK            02000-027EF             7F0           1
-        STRCODE          00004-007B2             7AF           2
+        STRCODE          00004-007B0             7AD           2
                          00800-03FFF            3800
-        STRING           00004-007B2             100           2
+        STRING           00004-007B0             100           2
                          00800-03FFF             100
 
                                   Symbol Table
@@ -529,7 +529,7 @@ _OSCCON1                         (abs)        0088D
 _OSCCON3                         (abs)        0088F
 _OSCEN                           (abs)        00891
 _OSCFRQ                          (abs)        00893
-_OSCILLATOR_Initialize           text4        007B3
+_OSCILLATOR_Initialize           text4        007B1
 _OSCTUNE                         (abs)        00892
 _PIN_MANAGER_Initialize          text3        007D9
 _PMD0                            (abs)        00796
@@ -540,12 +540,12 @@ _PMD4                            (abs)        0079A
 _PMD5                            (abs)        0079B
 _PMD6                            (abs)        0079C
 _PMD7                            (abs)        0079D
-_PMD_Initialize                  text2        007C5
+_PMD_Initialize                  text2        007C3
 _PORTCbits                       (abs)        0000E
 _SLRCONA                         (abs)        01F3B
 _SLRCONB                         (abs)        01F46
 _SLRCONC                         (abs)        01F51
-_SYSTEM_Initialize               text1        007BC
+_SYSTEM_Initialize               text1        007BA
 _TRISA                           (abs)        00012
 _TRISB                           (abs)        00013
 _TRISC                           (abs)        00014
@@ -894,25 +894,25 @@ ___latbits                       (abs)        00003
 ___sp                            stack        00000
 ___stackhi                       (abs)        027EF
 ___stacklo                       (abs)        02000
-__end_of_OSCILLATOR_Initialize   text4        007BC
+__end_of_OSCILLATOR_Initialize   text4        007BA
 __end_of_PIN_MANAGER_Initialize  text3        007FD
-__end_of_PMD_Initialize          text2        007CF
-__end_of_SYSTEM_Initialize       text1        007C5
+__end_of_PMD_Initialize          text2        007CD
+__end_of_SYSTEM_Initialize       text1        007C3
 __end_of__initialization         cinit        007FD
 __end_of_main                    maintext     007D9
 __initialization                 cinit        007FD
 __pcstackCOMMON                  cstackCOMMON 00000
-__pmaintext                      maintext     007CF
-__ptext1                         text1        007BC
-__ptext2                         text2        007C5
+__pmaintext                      maintext     007CD
+__ptext1                         text1        007BA
+__ptext2                         text2        007C3
 __ptext3                         text3        007D9
-__ptext4                         text4        007B3
+__ptext4                         text4        007B1
 __size_of_OSCILLATOR_Initialize  (abs)        00000
 __size_of_PIN_MANAGER_Initialize (abs)        00000
 __size_of_PMD_Initialize         (abs)        00000
 __size_of_SYSTEM_Initialize      (abs)        00000
 __size_of_main                   (abs)        00000
-_main                            maintext     007CF
+_main                            maintext     007CD
 btemp                            (abs)        0007E
 end_of_initialization            cinit        007FD
 intlevel0                        functab      00000
@@ -1092,14 +1092,14 @@ shared
 shared estimated size: 1
 
 mcc_generated_files/mcc.c
-		_PMD_Initialize		CODE           	07C5	0000	11
-		_OSCILLATOR_Initialize		CODE           	07B3	0000	10
-		_SYSTEM_Initialize		CODE           	07BC	0000	10
+		_PMD_Initialize		CODE           	07C3	0000	11
+		_OSCILLATOR_Initialize		CODE           	07B1	0000	10
+		_SYSTEM_Initialize		CODE           	07BA	0000	10
 
 mcc_generated_files/mcc.c estimated size: 31
 
 main.c
-		_main          		CODE           	07CF	0000	11
+		_main          		CODE           	07CD	0000	13
 
-main.c estimated size: 11
+main.c estimated size: 13
 

@@ -69,7 +69,8 @@ void main(void)
     while (1)
     {
         // Add your application code
-        if(IO_RC2_GetValue() == 1){IO_RA2_SetHigh();}
+        if(IO_RC2_GetValue() == 1 && IO_RC1_GetValue() == 1){
+            IO_RA2_SetHigh();}
         else{IO_RA2_SetLow();}
     }
 }

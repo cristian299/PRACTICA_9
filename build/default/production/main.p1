@@ -1406,9 +1406,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 70:     {
 {
 "72
-[; ;main.c: 72:         if(PORTCbits.RC2 == 1){do { LATAbits.LATA2 = 1; } while(0);}
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1517  ]
+[; ;main.c: 72:         if(PORTCbits.RC2 == 1 && PORTCbits.RC1 == 1){
+[e $ ! && == -> . . _PORTCbits 0 2 `i -> 1 `i == -> . . _PORTCbits 0 1 `i -> 1 `i 1517  ]
 {
+"73
+[; ;main.c: 73:             do { LATAbits.LATA2 = 1; } while(0);}
 [e :U 1520 ]
 {
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
@@ -1416,8 +1418,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 1519 ]
 }
 [e $U 1521  ]
-"73
-[; ;main.c: 73:         else{do { LATAbits.LATA2 = 0; } while(0);}
+"74
+[; ;main.c: 74:         else{do { LATAbits.LATA2 = 0; } while(0);}
 [e :U 1517 ]
 {
 [e :U 1524 ]
@@ -1427,13 +1429,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 1523 ]
 }
 [e :U 1521 ]
-"74
-[; ;main.c: 74:     }
+"75
+[; ;main.c: 75:     }
 }
 [e :U 1514 ]
 [e $U 1515  ]
 [e :U 1516 ]
-"75
-[; ;main.c: 75: }
+"76
+[; ;main.c: 76: }
 [e :UE 1513 ]
 }
